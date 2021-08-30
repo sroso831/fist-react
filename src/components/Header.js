@@ -14,7 +14,7 @@ const Header = ({setRefresh}) => {
             },
             body: JSON.stringify(newTodo)
         }).then(() => {
-			// ketika sukses menambah data, reset form dengan mengeset state title menjadi empty string
+			// ketika sukses menambah data, reset form dengan mengeset state title menjadi empty string 
 			setTitle("")
 			setRefresh(true)
 
@@ -27,7 +27,7 @@ const Header = ({setRefresh}) => {
   return (
     <div id="todo-header" className="header">
       <h2>Simple Todo App</h2>
-	  <input
+	  <input 
 		  type="text"
 		  value={title}
 		  onChange={(e) => setTitle(e.target.value)}

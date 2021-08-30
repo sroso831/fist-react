@@ -26,7 +26,7 @@ const TodoItem = ({ todo, setRefresh }) => {
 
   return (
     <li className={`${todo.done ? "checked" : ""}`}>
-      <div onClick={updateTodo}>{todo.title}</div>
+      <div onClick={updateTodo}>{todo.title}</div> 
       <span className="close" onClick={deleteTodo}>x</span>
     </li>
   );
